@@ -2,7 +2,7 @@
 
 ---
 
-## What about it?
+## what about it?
 
 - CSS fundamentals
 - The problem with CSS
@@ -11,17 +11,17 @@
 
 ---
 
-## CSS fundamentals
+## css fundamentals
 
 ---
 
-## What is CSS?
+## what is css?
 ![css peter griffin gif](images/css-petergriffin.gif)
 
 ---
 
-## But really...
-> used to style and layout web pages &mdash; for example, to alter the font, colour, size and spacing of your content, split it into multiple columns, or add animations and other decorative features - MDN web docs
+## but really...
+> used to style and layout web pages &mdash; for example, to alter the font, colour, size and spacing of your content, split it into multiple columns, or add animations and other decorative features <br /> &mdash; MDN web docs
 
 
 notes:
@@ -31,7 +31,7 @@ https://colorlib.com/wp/css-layouts/
 
 ---
 
-## Anatomy of a CSS ruleset
+## anatomy of a css ruleset
 
 ![css ruleset](images/css-ruleset.png)
 
@@ -56,3 +56,58 @@ Property value
 To the right of the property after the colon, we have the property value, which chooses one out of many possible appearances for a given property (there are many color values besides red).
 
 -- MDN web docs
+
+---
+
+## cascade & specificity
+
+selectors overrule each other in this order
+1. importance
+2. specificity
+3. source order
+
+---
+
+## importance
+using *`!important`* keyword will take the highest priority
+
+```css
+p {
+    color: red !important;
+}
+```
+
+---
+
+## specificity
+> a measure of how specific a selector is &mdash; how many elements it could match <br /> &mdash; MDN web docs
+
+---
+
+## selectors from the highest specificity to the lowest
+1. inline styles
+2. id selectors (e.g. #example).
+3. class selectors (e.g. .example), attributes selectors (e.g. [type="radio"]) and pseudo-classes (e.g. :hover).
+4. element selectors (e.g. h1) and pseudo-elements (e.g. ::before).
+
+notes:
+
+** use 2-specificity to demo each type of selector
+
+demo what happens when you use the selector with !important
+
+---
+
+## source order
+
+```css
+p {
+    color: red;
+}
+
+/* this overrides red */
+p {
+    color: blue;
+}
+```
+

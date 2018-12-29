@@ -1,0 +1,24 @@
+/* element selector */
+h1 {
+    color: green;
+}
+
+/* id selector */
+/* #page-title {
+    color: orange;
+} */
+
+/* class selector */
+/* .page-title {
+    color: blue;
+} */
+
+/* important declaration */
+/* h1 {
+    color: black !important;
+} */
+
+/* source order overrwites previous declaration of h1 */
+/* h1 {
+    color: pink;
+} */
