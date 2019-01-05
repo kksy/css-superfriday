@@ -111,3 +111,20 @@ p {
 }
 ```
 
+---
+
+## box model
+
+<img src="images/box-model.png" alt="box model" width="600"/>
+
+---
+
+the fill area gets filled by the background property
+
+<img src="images/fill-area.png" alt="box model fill area" width="600"/>
+
+
+notes:
+
+as you can see, this includes the content area, padding and border
+
