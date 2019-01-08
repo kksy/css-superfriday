@@ -127,4 +127,15 @@ the fill area gets filled by the background property
 notes:
 
 as you can see, this includes the content area, padding and border
+see 3-box-model index1.html to practice adding padding and margin
 
+---
+
+## types of css boxes
+
+- defined by the display property
+- inline, inline-block, block
+
+notes:
+
+see 3-box-model index2.html

@@ -1,0 +1,14 @@
+p {
+    padding: 1em;
+    border: 1px solid black;
+    width: 50%;
+}
+  
+span {
+    border: 1px solid green;
+    background-color: yellow;
+}
+  
+.inline { display: inline; }
+.block { display: block; }
+.inline-block { display: inline-block; }
