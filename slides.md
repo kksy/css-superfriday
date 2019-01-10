@@ -55,7 +55,7 @@ Property value
 
 To the right of the property after the colon, we have the property value, which chooses one out of many possible appearances for a given property (there are many color values besides red).
 
--- MDN web docs
+&mdash; MDN web docs
 
 ---
 
@@ -139,3 +139,13 @@ see 3-box-model index1.html to practice adding padding and margin
 notes:
 
 see 3-box-model index2.html
+
+---
+
+## collapsing margin
+
+> The top and bottom margins of blocks are sometimes combined (collapsed) into a single margin whose size is the largest of the individual margins (or just one of them, if they are equal) <br /> &mdash; MDN web 
+
+notes: 
+
+example with the h1 and p tag margins collapsing in the demo
