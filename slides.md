@@ -144,8 +144,98 @@ see 3-box-model index2.html
 
 ## collapsing margin
 
-> The top and bottom margins of blocks are sometimes combined (collapsed) into a single margin whose size is the largest of the individual margins (or just one of them, if they are equal) <br /> &mdash; MDN web 
+> The top and bottom margins of blocks are sometimes combined (collapsed) into a single margin whose size is the largest of the individual margins (or just one of them, if they are equal) <br /> &mdash; MDN web docs
 
 notes: 
 
 example with the h1 and p tag margins collapsing in the demo
+
+---
+
+## responsive design
+
+> For Web developers, it is now fairly common to be called upon to create a Web site or app that changes its user interface depending on the browser or device accessing the site to provide an optimized experience. <br /> &mdash; MDN web docs
+
+notes:
+
+example responsive websites
+https://www.awwwards.com/websites/responsive-design/
+https://www.thoughtworks.com/
+https://www.apple.com/au/shop/buy-mac/macbook-pro
+
+
+---
+
+## building blocks of responsive design
+- media queries
+- viewport
+
+---
+
+## media queries
+allows content to be rendered differently through conditions such as 
+- media type (eg. screen, print)
+- screen resolution
+- and more...
+
+notes:
+
+we will only talk about device width in this presentation
+https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries
+
+---
+
+## anatomy of a media query
+
+```css
+/* 
+Bootstrap mobile first breakpoints
+No media query for devices less than 576px because this is default
+*/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { ... }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { ... }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { ... }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { ... }
+
+```
+
+notes:
+
+- opening the mobile view from the inspector,
+- we find that this is not really optimised for mobile devices
+- enter viewport meta
+
+---
+
+## viewport
+
+The browser's viewport is the area of the window in which web content can be seen. This is often not the same size as the rendered page, in which case the browser provides scrollbars for the user to scroll around and access all the content. <br /> &mdash; MDN web docs
+
+---
+
+## viewport meta tag to the rescue
+
+typical mobile-optimised site contains:
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1">
+```
+
+notes:
+
+width:
+- The width property controls the size of the viewport.
+- can be set to a specific number of pixels like width=600 or to the special value device-width, which is the width of the screen in CSS pixels at a scale of 100%
+
+initial-scale:
+- controls the zoom level when the page is first loaded
+
+(MDN web docs)
