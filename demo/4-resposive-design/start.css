@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+}
+
+.box {
+    height: 200px;
+    background-color: cornflowerblue;
+    margin-top: 10px;
+    border-radius: 2px;
+    font-size: 50px;
+    /* border: 1px solid black; */
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+@media (min-width: 576px) { 
+    .box {
+        background-color: palevioletred;
+    }
+}
+
+@media (min-width: 768px) { 
+    .box {
+        background-color: peachpuff;
+    }
+}
+
+@media (min-width: 992px) { 
+    .box {
+        background-color: #9966cc;
+    }
+ }
+
+@media (min-width: 1200px) { 
+    .box {
+        background-color: yellowgreen;
+    }
+ }

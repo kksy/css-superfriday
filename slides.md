@@ -209,6 +209,7 @@ No media query for devices less than 576px because this is default
 
 notes:
 
+- in 4-responsive-design, start.html changes colour according to size
 - opening the mobile view from the inspector,
 - we find that this is not really optimised for mobile devices
 - enter viewport meta
@@ -239,3 +240,51 @@ initial-scale:
 - controls the zoom level when the page is first loaded
 
 (MDN web docs)
+
+https://developers.google.com/web/fundamentals/design-and-ux/responsive/
+
+---
+
+## flexbox
+- the children of a flex container can be laid out in any direction, and can "flex" their sizes, either growing to fill unused space or shrinking to avoid overflowing the parent
+- Both horizontal and vertical alignment of the children can be easily manipulated <br /> &mdash; MDN web docs
+
+notes:
+
+- there are several ways to make the layout responsive
+- we will be using flexbox, although it is typically best used for one dimension layouting
+- now easy to align things vertically
+- EXAMPLE https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout
+
+---
+
+## let's combine this with media queries
+
+notes:
+
+- to achieve final.html in 4-responsive-design
+- let's start without the border first
+- at min-width: 576px, we want 2 boxes in a row
+
+---
+
+## specifying the number of boxes per line...
+
+1. apply display: flex to the parent
+2. apply flex-basis: 50% (for 2 items) to the children to set the initial size of the flex items
+3. apply flex-wrap: wrap to allow them to occupy multiple lines when the space occupied gets too big
+
+notes:
+
+- not using flex-wrap will force the boxes to overflow to the right
+
+---
+
+## adding gutter
+
+1. apply negative margin-top to shift parent up
+2. apply negative margin-left to shift parent to the left
+3. then applying positive margin-top and margin-left to the children will only create the gap in the middle
+4. finally, flex: 0 0 calc(50% - 10px); to reduce the size of the flex items by 10px
+
+

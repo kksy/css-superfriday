@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+}
+
+.box {
+    height: 200px;
+    background-color: cornflowerblue;
+    margin-top: 10px;
+    border-radius: 2px;
+    font-size: 50px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+@media (min-width: 576px) { 
+    .boxes {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: -10px;
+        margin-left: -10px;
+    }
+
+    .box {
+        flex: 0 0 calc(50% - 10px);
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+} 
+
+@media (min-width: 768px) { 
+    .box {
+        flex: 0 0 calc(33.333% - 10px);
+    }
+ }
+
+@media (min-width: 992px) { 
+    .box {
+        flex: 0 0 calc(25% - 10px);
+    }
+ }
+
+@media (min-width: 1200px) {  }
