@@ -35,6 +35,15 @@ nav a:hover {
     text-decoration: underline;
 }
 
+.nav-expanded {
+    display: none;
+}
+
+.menu-trigger {
+    color: #fff;
+    cursor: pointer;
+}
+
 h1 {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
@@ -116,4 +125,26 @@ footer {
     padding: 30px 10px;
     margin-top: 20px;
     color: #6c757d;
+}
+
+@media (min-width: 576px) { 
+    
+} 
+
+@media (min-width: 768px) { 
+    .nav-expanded {
+        display: block;
+    }
+
+    .nav-mobile {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) { 
+ 
+}
+
+@media (min-width: 1200px) { 
+
 }
