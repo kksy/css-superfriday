@@ -4,11 +4,21 @@ body {
     background-color: #f8f9fa;
 }
 
+.wrapper {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100%;
+}
+
 header {
     background-color: #343a40;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+header .wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
 }
 
 .logo {
@@ -65,8 +75,9 @@ h1 {
     font-size: 20px;
 }
 
-.pictures {
-    padding: 30px 10px;
+.pictures .wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -126,16 +137,24 @@ h1 {
 
 footer {
     background-color: #fff;
-    padding: 30px 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     margin-top: 20px;
     color: #6c757d;
 }
 
 @media (min-width: 576px) { 
-    
+    .wrapper {
+        max-width: 540px;
+        margin: auto;
+    }
 } 
 
 @media (min-width: 768px) { 
+    .wrapper {
+        max-width: 720px;
+    }
+
     .nav-expanded {
         display: block;
     }
@@ -145,10 +164,13 @@ footer {
     }
 
     .pictures {
-        flex-direction: row;
-        flex-wrap: wrap;
         margin-top: -10px;
         margin-left: -10px;
+    }
+
+    .pictures .wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
     .card {
@@ -160,9 +182,7 @@ footer {
 }
 
 @media (min-width: 992px) { 
-
-}
-
-@media (min-width: 1200px) { 
-
+    .wrapper {
+        max-width: 800px;
+    }
 }
