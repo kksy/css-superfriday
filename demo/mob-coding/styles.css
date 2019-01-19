@@ -5,15 +5,12 @@ body {
 }
 
 .wrapper {
-    margin-left: 10px;
-    margin-right: 10px;
     width: 100%;
 }
 
 header {
     background-color: #343a40;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px;
 }
 
 header .wrapper {
@@ -78,6 +75,8 @@ h1 {
 .pictures .wrapper {
     padding-top: 30px;
     padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
