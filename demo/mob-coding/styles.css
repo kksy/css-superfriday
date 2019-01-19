@@ -147,11 +147,15 @@ footer {
     .pictures {
         flex-direction: row;
         flex-wrap: wrap;
+        margin-top: -10px;
+        margin-left: -10px;
     }
 
     .card {
-        flex: 0 0 33.333%;
+        flex: 0 0 calc(33.333% - 10px);
         box-sizing: border-box;
+        margin-top: 10px;
+        margin-left: 10px;
     }
 }
 
