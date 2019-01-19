@@ -23,3 +23,59 @@ h1 {
 .tagline {
     font-size: 20px;
 }
+
+.pictures {
+    padding: 30px 10px;
+    background-color: #f8f9fa;
+}
+
+.card {
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)
+}
+
+.card-thumbnail {
+    height: 225px;
+    background-color: #555;
+}
+
+.card-body {
+    padding: 10px;
+    background-color: #fff;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.card-controls {
+    display: flex;
+}
+
+.card-controls button {
+    border: none;
+    color: #6c757d;
+}
+
+.card-controls button:first-of-type {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border: 1px solid #6c757d;
+}
+
+.card-controls button:last-of-type {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border: 1px solid #6c757d;
+    border-left: 0;
+}
+
+.card-timestamp {
+    color: #6c757d;
+    font-size: 0.75rem;
+}
