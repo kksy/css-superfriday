@@ -1,6 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
+    background-color: #f8f9fa;
 }
 
 h1 {
@@ -26,7 +27,6 @@ h1 {
 
 .pictures {
     padding: 30px 10px;
-    background-color: #f8f9fa;
 }
 
 .card {
@@ -78,4 +78,11 @@ h1 {
 .card-timestamp {
     color: #6c757d;
     font-size: 0.75rem;
+}
+
+footer {
+    background-color: #fff;
+    padding: 30px 10px;
+    margin-top: 20px;
+    color: #6c757d;
 }
