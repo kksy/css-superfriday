@@ -1,0 +1,27 @@
+/* 
+    problem 1: add more spacing between heading and link
+*/
+  
+header {
+    background-color: #333;
+    padding: 50px 0;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 0;
+    background-color: #ccc;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    background-color: tomato;
+}
+
+a:hover {
+    background-color: #fd745c;
+}

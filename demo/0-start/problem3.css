@@ -1,0 +1,27 @@
+/* 
+    problem 3: change link to green, then blue, then white
+*/
+  
+header {
+    background-color: #333;
+    padding: 50px 0;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 0;
+    background-color: #ccc;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.tomato-link {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    background-color: tomato;
+}
+
+.tomato-link:hover {
+    background-color: #fd745c;
+}
