@@ -288,3 +288,38 @@ notes:
 4. finally, flex: 0 0 calc(50% - 10px); to reduce the size of the flex items by 10px
 
 
+---
+
+## maintainability
+
+notes:
+- a lot of these can be subjective, but here are some of the things that can help in making css more maintainable
+
+---
+
+## semantic naming
+
+```html
+<!-- non semantic -->
+<div class="red pull-left pb3">
+<div class="grid row">
+<div class="col-xs-4">
+
+<!-- semantic -->
+<div class="basket">
+<div class="product">
+<div class="searchResults">
+```
+
+---
+
+## why semantic naming
+
+- more readable, easier to find
+- easier to style elements without having to define multiple classes
+- avoid conflicting styling
+- easier to use with media queries
+
+
+
+
