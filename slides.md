@@ -158,6 +158,10 @@ example with the h1 and p tag margins collapsing in the demo
 
 ---
 
+<img src="images/wat.gif" alt="wat" width="600">
+
+---
+
 ## responsive design
 
 > For Web developers, it is now fairly common to be called upon to create a Web site or app that changes its user interface depending on the browser or device accessing the site to provide an optimized experience. <br /> &mdash; MDN web docs
@@ -248,6 +252,16 @@ initial-scale:
 (MDN web docs)
 
 https://developers.google.com/web/fundamentals/design-and-ux/responsive/
+
+---
+
+## challenge: align a box vertically in a box
+
+<img src="images/css-verticalalign.jpg" alt="css vertical align comic">
+
+notes:
+
+saved by flexbox
 
 ---
 
@@ -516,6 +530,8 @@ nav {
 - sass: http://sass-lang.com
 - browser support check: https://caniuse.com/
 - css visual reference: https://cssreference.io/
+- centering in css: https://css-tricks.com/centering-css-complete-guide/
+
 
 
 
