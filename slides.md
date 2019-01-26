@@ -113,6 +113,12 @@ p {
 
 ---
 
+## !important = evil
+
+<img src="images/evil.gif" alt="evil" width="600">
+
+---
+
 ## box model
 
 <img src="images/box-model.png" alt="box model" width="600"/>
