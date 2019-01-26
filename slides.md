@@ -166,13 +166,16 @@ example with the h1 and p tag margins collapsing in the demo
 
 > For Web developers, it is now fairly common to be called upon to create a Web site or app that changes its user interface depending on the browser or device accessing the site to provide an optimized experience. <br /> &mdash; MDN web docs
 
+---
+
+<img src="images/responsive.gif" alt="responsive" width="600">
+
 notes:
 
 example responsive websites
 https://www.awwwards.com/websites/responsive-design/
 https://www.thoughtworks.com/
 https://www.apple.com/au/shop/buy-mac/macbook-pro
-
 
 ---
 
@@ -307,6 +310,10 @@ notes:
 3. then applying positive margin-top and margin-left to the children will only create the gap in the middle
 4. finally, flex: 0 0 calc(50% - 10px); to reduce the size of the flex items by 10px
 
+
+---
+
+<img src="images/wat.gif" alt="wat" width="600">
 
 ---
 
