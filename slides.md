@@ -290,6 +290,14 @@ notes:
 
 ---
 
+## let's apply what we've learnt!
+
+- clone: https://github.com/kksy/css-superfriday
+- go to <span style="color:#9fd65c;">/demo/mob-coding</span> folder and edit <span style="color:#9fd65c;">start.html</span> and <span style="color:#9fd65c;">start.css</span>
+
+
+---
+
 ## maintainability
 
 notes:
@@ -483,6 +491,25 @@ nav {
 
 - having a visual hierarchy makes css more readable
 - warning: too much nesting will be harder to maintain
+
+---
+
+## now let's do more practices!
+
+---
+
+## thanks for attending!
+
+---
+
+## resources
+
+- css intro: https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS
+- maintainable css: https://maintainablecss.com
+- bem: http://getbem.com
+- sass: http://sass-lang.com
+- browser support check: https://caniuse.com/
+- css visual reference: https://cssreference.io/
 
 
 
