@@ -320,6 +320,172 @@ notes:
 - avoid conflicting styling
 - easier to use with media queries
 
+---
+
+## conventions
+
+eg. BEM
+http://getbem.com/naming/
+
+notes:
+
+- there are different naming conventions with advantages and disadvantages
+- for the purpose of this presentation, we will explore BEM
+
+---
+
+## <span style="color:#9fd65c;">B</span>EM: <span style="color:#9fd65c;">block</span>
+
+encapsulates a standalone entity that is meaningful on its own
+
+```html
+<div class="block">...</div>
+```
+
+---
+
+## B<span style="color:#9fd65c;">E</span>M: <span style="color:#9fd65c;">element</span>
+
+- parts of a block and have no standalone meaning
+- any element is semantically tied to its block
+
+```html
+<div class="block">
+	  ...
+    <span class="block__elem"></span>
+</div>
+```
+
+---
+
+## BE<span style="color:#9fd65c;">M</span>: <span style="color:#9fd65c;">modifier</span>
+
+- flags on blocks or elements
+- use them to change appearance, behavior or state.
+
+```html
+<div class="block block--mod">...</div>
+<div class="block block--size-big block--shadow-yes">...</div>
+```
+
+---
+
+## BEM: example
+
+- suppose you have block form with modifiers <span style="color:#9fd65c;">theme: "xmas"</span> and <span style="color:#9fd65c;">simple: true</span>
+- with elements <span style="color:#9fd65c;">input</span> and <span style="color:#9fd65c;">submit</span>
+- element <span style="color:#9fd65c;">submit</span> with its own modifier <span style="color:#9fd65c;">disabled: true</span> for not submitting form while it is not filled
+
+---
+
+html
+
+```html
+<form class="form form--theme-xmas form--simple">
+  <input class="form__input" type="text" />
+  <input
+    class="form__submit form__submit--disabled"
+    type="submit" />
+</form>
+```
+
+css
+```css
+.form { }
+.form--theme-xmas { }
+.form--simple { }
+.form__input { }
+.form__submit { }
+.form__submit--disabled { }
+
+```
+
+---
+
+## why having conventions matter
+
+- naming is hard
+- reduces specificity issues
+- new devs will have a reference point
+
+---
+
+## normalize
+
+- browsers render elements differently
+- reduces styling pain when supporting multiple browsers
+- example: https://github.com/sindresorhus/modern-normalize
+
+notes:
+
+https://github.com/sindresorhus/modern-normalize/blob/master/modern-normalize.css
+
+- removing margins in the body
+- button example
+
+---
+
+## using css preprocessors
+
+> a program that lets you generate CSS from the preprocessor's own unique syntax <br /> &mdash; MDN web docs
+
+---
+
+## example: SASS 
+https://sass-lang.com/guide
+
+---
+
+## SASS: variables
+
+```scss
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+```
+
+---
+
+## SASS: variables benefits
+
+- define style guide colours
+- reuse
+
+---
+
+## SASS: nesting
+
+```scss
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li { display: inline-block; }
+
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}
+```
+
+---
+
+## SASS: nesting benefits
+
+- having a visual hierarchy makes css more readable
+- warning: too much nesting will be harder to maintain
+
+
+
 
 
 
