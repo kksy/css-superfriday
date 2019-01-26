@@ -11,6 +11,14 @@
 
 ---
 
+<img src="images/confused.gif" alt="confused dogs" width="600">
+
+---
+
+<img src="images/genius.gif" alt="genius dog" width="600">
+
+---
+
 ## css fundamentals
 
 ---
