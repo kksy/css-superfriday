@@ -39,6 +39,33 @@ https://colorlib.com/wp/css-layouts/
 
 ---
 
+## connecting html to css
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- the document's character encoding -->
+    <meta charset="utf-8">
+    <title>CSS Fundamentals</title>
+    <!-- 
+      linking external resources to the document 
+      eg. a stylesheet 
+    -->
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- contents displayed on the web page -->
+  </body>
+</html>
+```
+
+notes:
+
+- let's start with a way we can connect our styles with our html document
+
+---
+
 ## anatomy of a css ruleset
 
 ![css ruleset](images/css-ruleset.png)
