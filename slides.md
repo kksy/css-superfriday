@@ -94,6 +94,109 @@ To the right of the property after the colon, we have the property value, which 
 
 ---
 
+## type/element selector
+matches elements by the name of the node
+
+<p style="text-align:left;">html</p>
+
+```html
+<p>Hello world!</p>
+```
+
+<p style="text-align:left;">css</p>
+
+```css
+p {
+  color: red;
+}
+```
+
+---
+
+## class selector
+selects all elements that have the given class attribute
+
+<p style="text-align:left;">html</p>
+
+```html
+<p class="greeting">Hello world!</p>
+```
+
+<p style="text-align:left;">css</p>
+
+```css
+.greeting {
+  color: red;
+}
+```
+
+---
+
+## id selector
+- selects an element with the id attribute
+- there should only be one
+
+<p style="text-align:left;">html</p>
+
+```html
+<p id="greeting">Hello world!</p>
+```
+
+<p style="text-align:left;">css</p>
+
+```css
+#greeting {
+  color: red;
+}
+```
+
+---
+
+## pseudo selector
+selects an element with a given state
+
+<p style="text-align:left;">html</p>
+
+```html
+<a href="#">go somewhere</a>
+```
+
+<p style="text-align:left;">css</p>
+
+```css
+a:hover {
+  color: red;
+}
+```
+
+notes:
+
+- common example changing the hover style of a link
+
+---
+
+<p style="text-align:left;">html</p>
+
+```html
+<p>First paragraph</p>
+<p>Second paragraph</p>
+<p>Third paragraph</p>
+```
+
+<p style="text-align:left;">css</p>
+
+```css
+p:first-of-type {
+  color: red;
+}
+```
+
+notes:
+
+- selects the first sibling "p" element
+
+---
+
 ## cascade & specificity
 
 selectors overrule each other in this order
