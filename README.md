@@ -8,7 +8,7 @@
 4. Box model 
     - Display properties
     - Collapsing margins
-5. Positioning (in progress)
+5. Positioning
 6. Responsive design with flexbox
 7. Maintainability
 
