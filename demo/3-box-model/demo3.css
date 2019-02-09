@@ -1,0 +1,39 @@
+.box {
+    width: 200px;
+    height: 100px;
+    border: 2px solid black;
+    box-sizing: border-box;
+    margin: 20px;
+}
+
+.first {
+    background-color: rosybrown;
+}
+
+.second {
+    background-color: paleturquoise;
+    position: relative;
+}
+
+.third {
+    background-color: plum;
+    
+    position: absolute;
+    /* 
+        "top" specifies the distance between the element's top edge 
+        and the top edge of its containing block.
+        the containing block needs to be position: relative
+    */
+    top: 0;
+}
+
+.fourth {
+    background-color: palegoldenrod;
+    position: absolute;
+    top: 0;
+}
+
+.fifth {
+    position: relative;
+    left: 100px;
+}

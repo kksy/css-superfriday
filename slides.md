@@ -300,6 +300,57 @@ example with the h1 and p tag margins collapsing in the demo
 
 ---
 
+## position property
+
+> sets how an element is positioned in a document. The top, right, bottom, and left properties determine the final location of positioned elements <br /> &mdash; MDN web docs
+
+---
+
+## position: static
+
+the default position of elements
+
+notes: 
+
+- go to 3-box-model demo 3
+- show box 1 and look at the computed position in the dev tools
+
+---
+
+## position: relative
+
+allows positioning of elements with an offset
+
+notes:
+
+- show box 5 and the offset from the left of the page
+
+---
+
+## position: absolute
+
+- allows positioning of elements with an offset
+- specifying offset is relative to the edges of the containing block
+
+notes:
+
+- show box 2 and 3, with 2 having position:relative
+- show box 4 with no ancestor, so it's attached to the root element
+
+---
+
+## common use case: dropdown
+
+https://css-tricks.com/solved-with-css-dropdown-menus/
+
+notes:
+
+- the li element is positioned relative
+- it has another ul, which contains the dropdown
+- the dropdown ul is positioned absolute
+
+---
+
 ## responsive design
 
 > For Web developers, it is now fairly common to be called upon to create a Web site or app that changes its user interface depending on the browser or device accessing the site to provide an optimized experience. <br /> &mdash; MDN web docs
