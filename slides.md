@@ -710,6 +710,12 @@ nav {
 
 ---
 
+## CSS is code too
+
+<img src="images/marie.gif" alt="marie kondo" width="600">
+
+---
+
 ## now let's do more practices!
 
 ---
