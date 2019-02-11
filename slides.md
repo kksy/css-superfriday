@@ -26,6 +26,29 @@
 ## what is css?
 ![css peter griffin gif](images/css-petergriffin.gif)
 
+notes:
+
+Check 0-start folder
+The problem with css is its unpredictability
+1. Why can't i put any margins around this link
+  - "a" tag is an inline element, so you can’t put margin top and bottom
+2. Specificity  (View button in final mob demo, change view button to blanchedalmond colour)
+  - Previously, there is a view-button class that wasn't removed
+  - Add class to view button
+  - Put style near card-controls, because seems logical
+  - Refresh page, find that it doesn't work
+  - Open dev tools, find out what’s wrong, remove class
+  - Find that there was a previous style there
+  - Other dev: Add inline style blanchedalmond to last button
+  - Now have to change back to white
+  - So now change .view-button class to white
+  - Find that one colour still hasn't changed
+3. Oh man now that blue button needs to change to a red button
+  - naming classes .blue-button or .red-button is not good
+
+The aim  of this superfriday is to make CSS less like the gif
+
+
 ---
 
 ## but really...
