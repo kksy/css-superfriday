@@ -1,0 +1,17 @@
+/* CHALLENGE: how would you remove the left margin of the first box? */
+
+.boxes {
+    background-color: blanchedalmond;
+    padding: 20px;
+    display: inline-block;
+}
+
+.box {
+    height: 50px;
+    width: 50px;
+    background-color: cornflowerblue;
+    border-radius: 2px;
+    font-size: 50px;
+    display: inline-block;
+    margin-left: 20px;
+}

@@ -11,14 +11,6 @@
 
 ---
 
-<img src="images/confused.gif" alt="confused dogs" width="600">
-
----
-
-<img src="images/genius.gif" alt="genius dog" width="600">
-
----
-
 ## css fundamentals
 
 ---
@@ -48,6 +40,14 @@ The problem with css is its unpredictability
 
 The aim  of this superfriday is to make CSS less like the gif
 
+
+---
+
+<img src="images/confused.gif" alt="confused dogs" width="600">
+
+---
+
+<img src="images/genius.gif" alt="genius dog" width="600">
 
 ---
 
@@ -220,6 +220,22 @@ notes:
 
 ---
 
+## some common combinators
+
+- descendant combinator
+  - https://developer.mozilla.org/en-US/docs/Web/CSS/Descendant_combinator
+
+- child combinator
+  - https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator
+
+---
+
+## CHALLENGE
+
+demo/1-css-fundamentals folder
+
+---
+
 ## cascade & specificity
 
 selectors overrule each other in this order
@@ -305,7 +321,17 @@ see 3-box-model index1.html to practice adding padding and margin
 
 notes:
 
-see 3-box-model index2.html
+- see 3-box-model demo2.html
+- mention html elements have their own initial display type
+
+---
+
+## CHALLENGE
+
+demo/3-box-model/demo2.html
+
+- what happens when you increase the width of p?
+- what happens when you add a margin of 20px to all of the highlighted words? 
 
 ---
 
@@ -315,7 +341,8 @@ see 3-box-model index2.html
 
 notes: 
 
-example with the h1 and p tag margins collapsing in the demo
+- example with the h1 and p tag margins collapsing in the demo
+- it's probably better to use margin top only in some cases
 
 ---
 
@@ -359,6 +386,12 @@ notes:
 
 - show box 2 and 3, with 2 having position:relative
 - show box 4 with no ancestor, so it's attached to the root element
+
+---
+
+## CHALLENGE
+
+demo/3-box-model/challenge.html
 
 ---
 
@@ -486,10 +519,26 @@ saved by flexbox
 
 notes:
 
-- there are several ways to make the layout responsive
-- we will be using flexbox, although it is typically best used for one dimension layouting
 - now easy to align things vertically
 - EXAMPLE https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout
+
+---
+
+## commonly used flexbox properties
+
+- display: flex to a parent container
+- vertical alignment
+  - https://cssreference.io/flexbox/#align-items
+- horizontal alignment
+  - https://cssreference.io/flexbox/#justify-content
+
+---
+
+## CHALLENGE
+
+demo/4-responsive-design/start.html
+
+align the numbers to the centre of the box
 
 ---
 
@@ -497,6 +546,8 @@ notes:
 
 notes:
 
+- there are several ways to make the layout responsive
+- we will be using flexbox, although it is typically best used for one dimension layouting
 - to achieve final.html in 4-responsive-design
 - let's start without the border first
 - at min-width: 576px, we want 2 boxes in a row
@@ -526,6 +577,15 @@ notes:
 ---
 
 <img src="images/wat.gif" alt="wat" width="600">
+
+---
+
+## flexbox aside
+
+- best used for one dimension layout
+- explore css grid for two dimensional layout
+- make sure it is supported by the browsers
+https://caniuse.com/#feat=css-grid
 
 ---
 
